@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+ <style>
+     body{
+         background-size: 100%;
+
+     }
+     .jumbotron{
+         height: 180px;
+     }
+ </style>
+<body background="img/kasir.jpg">
+    <center>
+    <div class="jumbotron">
+        <h2>Menu barang</h2><br>
+        <a href="latihan9.html"><button class="btn btn-warning col-sm-1">sapu</button></a>
+        <a href="lapel.html"><button class="btn btn-primary col-sm-1">lap pel</button></a>
+        <a href="ember.html"><button class="btn btn-danger col-sm-1">ember</button></a>
+        <a href="gayung.html"><button class="btn btn-info col-sm-1">gayung</button></a>
+    </div>
+    
+</center>
+<center>
+ <p>Harga gayung : Rp.15000</p>
+<input type="text" placeholder="pesen brpa" id="pesan" class="form-control col-sm-5"><br>
+<input type="text" placeholder="masukan uang anda" id="uang" class="form-control col-sm-5"><br>
+<button onclick="submit()" class="btn btn-success col-sm-5">submit</button><br><br>
+<a href="utama.html"><button class="btn btn-danger col-sm-5">logout</button></a>
+</center>
+    <script>
+        function submit(){
+            var harga =15000;
+            var jumlah;
+            var hasil;
+            var pesan = document.getElementById("pesan").value;
+            var bayar = document.getElementById("uang").value;
+
+            if(pesan){
+                document.write("harga barang 15000" + "<br>");
+               jumlah = harga * pesan ;
+               hasil = bayar - jumlah;
+               
+               document.write("uang anda :" + bayar +"<br>");
+               document.write("kembalian nya : " +hasil);
+            }
+            else {
+                document.write("gada");
+            }
+           
+        }
+    </script>
+
+</body>
+</html>

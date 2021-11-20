@@ -1,0 +1,167 @@
+nav{
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    box-shadow:0px 0px 8px grey;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 20px;
+}nav a{
+    padding:6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    display: block;
+    transition: 0.0s;
+    font-family: sans-serif;
+}
+.list{
+    width: 1300px;
+   height: 25;
+  background: whitesmoke;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+}
+.i{
+    padding-left: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+ul li{
+ list-style: none;
+
+}
+body{
+    background: rgb(214, 214, 214);
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    color:grey ;
+    font-family: sans-serif;
+    padding-left: 350px;
+}
+.box{
+    width: 1349px;
+    height: 130px;
+    background: black;
+    margin:0;
+    padding:1;
+    overflow: hidden;
+
+    
+}
+.gam{
+    width: 200px;
+    height: 70px;
+}
+.input{
+   width: 500px;
+   padding-left: 700px;
+}
+
+
+.radio{
+    width: 20px;
+}
+.perempuan{
+    width: 20px;
+}
+.submit{
+    width: 70px;
+    height: 30px;
+    background: rgb(12, 204, 12);
+    border-radius: 4px;
+    border: 2px solid rgb(12, 204, 14);
+}
+.reset{
+    width: 70px;
+    height: 30px;
+    background:rgb(247, 27, 27);
+    border-radius: 4px;
+    border: 2px solid red;
+
+}.reset:hover{
+    background: red;
+}
+i{
+    padding-left: 1200px;
+    color: gray;
+    font-family: sans-serif;
+}
+.home{
+    background: white;
+    width: 205px;
+}.home:hover{
+    background:whitesmoke;
+}
+.ps{
+background: white;
+width: 205px;
+}.ps:hover{
+ background:whitesmoke;
+}
+.dp{
+    background: white;
+    width: 205px;
+}.dp:hover{
+    background: whitesmoke;
+}
+.log{
+    background: white;
+    width: 205px;
+}.log:hover{
+    background: whitesmoke;
+}
+.dd{
+    background: white;
+    width: 205px;
+}.dd:hover{
+    background: whitesmoke;
+}
+.kel{
+    background: white;
+    width: 205px;
+}.kel:hover{
+    background: whitesmoke;
+}
+.tipis{
+    width: 1349px;
+    background: gray;
+    height: 5px;
+}
+.bawah{
+    padding-left:1000px;
+    font-size: 20px;
+    
+}
+table{
+    padding-left: 300px;
+}
+img{
+ width: 400px;
+ height: 150px;
+}
+td{
+    font-family: sans-serif;
+    color: black;
+}
+p{
+    color: whitesmoke;
+    padding-left: 400px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+marquee{
+    background: whitesmoke;
+    color: grey;
+    width: 220px;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}

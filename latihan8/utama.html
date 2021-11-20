@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+                body{
+          background-size: 100%;
+            padding: 0%;
+            margin: 0%;
+        }
+        .toggle-sidebar {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+   background: white;
+  }
+  .sidebar li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+    transition: background-color 0.5s;
+  }
+  .sidebar li a:hover {
+    background-color: whitesmoke;
+  }
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+    background-color:white;
+    /* tambahkan kode ini */
+    position: fixed;
+    left: -200px;
+    transition: 0.5s;
+}
+  /* tambahkan selector .sidebar-open di css */
+  .sidebar-open {
+    left: 0;
+}
+h4{
+    padding-left: 200px;
+    font-family: sans-serif;
+    color: whitesmoke;
+      font-size: 30px;
+}
+    </style>
+</head>
+<body background="img/ass.jpg">
+    <nav class="navbar navbar-expand-lg navbar bg-primary">
+        <div class= "container-fluid">
+          <h4> D E V I N - F E R D Y N A N D  </h4>
+        <br><br><br>
+          </div>
+        </div>
+      </nav>
+      <button class="toggle-sidebar" id="toggle-sidebar">=</button>
+      <ul class="sidebar">
+          <li><a href="latihan7.html">Home</a></li>
+          <li><a href="latihan8.html">umur</a></li>
+          <li><a href="lapel.html">kasir</a></li>
+          <li><a href="grade.html">grade</a></li>
+          <li><a href="diskon.html">hotel</a></li>
+         
+      </ul>
+    
+    <script>
+        
+        const sidebar = document.querySelector(".sidebar");
+        const toggleSidebar = document.querySelector("#toggle-sidebar");
+        toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("sidebar-open");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+b{
+    font-size: 30px;
+    padding-left: 100px;
+    font-family: sans-serif;
+}
+ul{
+    padding-left: 70px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+a{
+    padding-left: 1200px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}a:hover{
+    color: silver;
+}

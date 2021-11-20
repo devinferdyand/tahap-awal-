@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+  .jumbotron{
+      height: 100px;
+  }
+  H2{
+      color: white;
+      font-family: sans-serif;
+  }
+  body{
+      background: whitesmoke;
+  }
+</style>
+<body background="img/pemandangan.jpg">
+    <div>
+        <h2 style="text-align: center;">G R A D E</h2>
+    </div>
+    <center>
+    <input type="text" placeholder="nama" id="nama" class="form-control col-sm-5"><br>
+    <input type="text" placeholder="kelas" id="kelas" class=" form-control col-sm-5"><br>
+    <input type="text" placeholder="nilai" id="nilai" class="form-control col-sm-5"><br>  
+    <button onclick="submit()" class="btn btn-primary col-sm-5">submit</button>
+</center>
+
+      <script>
+       
+              function submit(){
+         var nama = document.getElementById("nama").value;
+         var kelas = document.getElementById("kelas").value;
+          var nilai = document.getElementById("nilai").value;
+
+          document.write("Nama saya :" + nama +"<br>");
+          document.write("kelas saya :" + kelas +"<br>");
+
+         
+
+          if (nilai <= 100 && nilai >= 81){
+              document.write("nilai : A");
+          }
+          else if(nilai >= 61 && nilai <=81 ){
+              document.write("nilai  : B");
+          }
+          else if (nilai >= 41 && nilai <=60 ){
+              document.write("nilai : C");
+          }
+          else if (nilai >= 16 && nilai <=40 ){
+              document.write("nilai : D");    
+          }
+          else if (nilai >= 0 && nilai <=15 ){
+              document.write("nilai : E");
+          }
+           else{
+               document.write("ngaco");
+           }
+        } 
+        </script>
+
+</body>
+</html>

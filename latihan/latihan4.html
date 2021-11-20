@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Konversi Waktu Dari Detik</title>
+    <script type="text/javascript">
+    function proses(){
+   var x;
+   x = parseInt(document.getElementById("waktu").vaule);
+  var y;
+  var jam;
+  var menit;
+  var detik;
+  var hari;
+
+y = x % 3600;
+hari = x / 86400;
+jam   = x / 3600;
+menit = y / 60;
+detik = y % 60;
+
+document.getElementById("hasil").innerHTML =Math.floor(hari) + 'hari' +  Math.floor(jam) + ' Jam ' + Math.floor(menit) + ' Menit ' + Math.floor(detik) + ' Detik ';
+
+}
+    </script>
+    <center>
+        <h1>Konversi waktu </h1>
+        <hr width="700px">
+    <br>
+    </center>
+    
+</head>
+<body>
+
+ <center>
+<input id="waktu" type="number" placeholder=" masukan Detik">
+<input type="button" value="Proses" onclick="proses()" class="button"><br>
+<p id="hasil"></p>
+<hr width="700px">
+</center>
+
+</body>
+<style>
+    input{
+        width: 500px;
+        height: 30px;
+    }input:hover{
+        border: 1px solid greenyellow;
+    }
+    .button{
+        width: 100px;
+        height: 30px;
+        background: greenyellow;
+        border: none;
+    }.button:hover{
+        background: green;
+    }
+    h1{
+        font-family: sans-serif;
+    }
+    p{
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+</style>
+</html>

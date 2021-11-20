@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+       
+        body{
+            background-size: 100%;
+            padding: 0%;
+            margin: 0%;
+        }
+        .toggle-sidebar {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+   background: white;
+  }
+  .sidebar li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+    transition: background-color 0.5s;
+  }
+  .sidebar li a:hover {
+    background-color: whitesmoke;
+  }
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+    background-color:white;
+    /* tambahkan kode ini */
+    position: fixed;
+    left: -200px;
+    transition: 0.5s;
+}
+  /* tambahkan selector .sidebar-open di css */
+  .sidebar-open {
+    left: 0;
+}
+h4{
+    text-align: center;
+}
+.container-fluid{
+    background: white;
+    width: 100%;
+    height: 100px;
+}
+nav{
+   height: 100px;
+}
+
+    </style>
+</head>
+<body background="img/umur.jpg">
+    <nav class="jumbotron">
+        <div class= " ">
+          <h4> U M U R </h4>
+        <br>
+          </div>
+      </nav>
+    
+      <br>
+<center>
+<input type="text" placeholder="nama" id="nama" class="form-control col-sm-5"><br>
+<input type="text" placeholder="umur" id="umur" class="form-control col-sm-5"><br>
+<button onclick="submit()" class="btn btn-primary form-control col-sm-5">submit</button><br><br>
+<a href="utama.html"><button class="btn btn-danger col-sm-5">logout</button></a>
+</center>
+    <script>
+            function submit(){
+        
+        var nama;
+        var umur = document.getElementById("umur").value;
+
+
+        if (umur <= 5){
+            document.write("anda masih balita");
+        }
+        else if(umur <= 12){
+            document.write("anda masi bocah");
+        }
+        else if (umur <= 18){
+            document.write("anda sudah remaja");
+        }
+        else if (umur <= 40){
+            document.write("anda sudah masuk kategori dewasa");    
+        }
+        else if (umur <= 60){
+            document.write("anda sudah tua istrirahat lain ulin wae");
+        }
+         else{
+             document.write("Anda sudah terlalu tua");
+         }
+            }   
+
+            const sidebar = document.querySelector(".sidebar");
+        const toggleSidebar = document.querySelector("#toggle-sidebar");
+        toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("sidebar-open");
+        });
+
+
+ </script>
+
+</body>
+</html>

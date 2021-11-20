@@ -1,0 +1,40 @@
+.navbar{
+    width: 1349px;
+    height: 130px;
+   background: rgb(83, 129, 13);
+}
+body{
+ margin: 0px;
+ padding: 0px;
+background: whitesmoke;
+}
+h1{
+    color: white;
+    font-size: 30px;
+    padding-left: 70px;
+    font-family: sans-serif;
+
+}
+.atas{
+    width: 874px;
+    height: 30px;
+    background:greenyellow;
+    font-size: 20px;
+    color: white;
+   
+}
+.list{
+    background: greenyellow;
+    width: 1349px;
+    height: 5px;
+}
+td{
+   width: 400px;
+   text-align: center;
+   height: 150px;
+   font-family: sans-serif;
+}
+.no{
+    height: 150px;
+    width: 50px;
+}

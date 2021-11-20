@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <style>
+  body{
+    background: rgb(243, 239, 239);
+  }
+  .toggle-sidebar {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+   background: white;
+  }
+  .sidebar li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+    transition: background-color 0.5s;
+  }
+  .sidebar li a:hover {
+    background-color: whitesmoke;
+  }
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+    background-color:white;
+    /* tambahkan kode ini */
+    position: fixed;
+    left: -200px;
+    transition: 0.5s;
+}
+  /* tambahkan selector .sidebar-open di css */
+  .sidebar-open {
+    left: 0;
+}
+
+.card{
+  left:200px;
+
+}
+img{
+  width: 400px;
+  height: 200px;
+}
+.d-flex{
+  padding-left: 500px;
+  height: 70px;
+}
+button{
+  height: 39px;
+}
+h4{
+  padding-left: 180px;
+   color: white;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+td{
+  padding-left: 5px;
+}
+.box{
+ 
+}
+   </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark >
+    <div class="container-fluid">
+      <h4>G R E E N L I G H T</h4>
+        <form class="d-flex group">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <button class="toggle-sidebar" id="toggle-sidebar">=</button>
+      <ul class="sidebar">
+          <li><a href="latihan7.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">kontak</a></li>
+          <li><a href="profil.html">Frofil</a></li>
+          <li><a href="selamat.html">Logout</a></li>
+          <li><a href="login.html">Login</a></li>
+      </ul>
+<br>
+      <div class="card" style="width:1100px;">
+        
+       <table>
+         <tr>
+           <td> <img src="img/baju.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s> <br> diskon :20 %<br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td><td> <img src="img/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s> <br>Diskon :20 % <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td><td> <img src="img/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s><br>Diskon :20 %  <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td><td> <img src="img/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s><br>Diskon :20 %  <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td>
+         </tr>
+         <tr>
+           <td> <img src="img/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s><br>Diskon :20 %  <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td><td> <img src="img/5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s><br>Diskon :20 %  <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td>
+          <td> <img src="img/6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s><br>Diskon :20 %  <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td>
+          <td> <img src="img/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Greenlight</h5>
+              <p class="card-text"> barang distro <br> lokasi : bandung <br> kualitas : terbaik <br>harga : <s>12.000.000</s> <br>Diskon :20 % <br> harga : 10.000.000</p>
+              <a href="#" class="btn btn-primary">Beli</a>
+            </div>
+          </div></td>
+         </tr>
+         <hr>
+        
+       </table>
+       
+      <i style="padding-left: 900px;">Devin ferdynand</i>
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+        const toggleSidebar = document.querySelector("#toggle-sidebar");
+        toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("sidebar-open");
+        });
+   </script>
+</body>
+</html>

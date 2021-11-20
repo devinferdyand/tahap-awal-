@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <style>
+  body{
+    background: whitesmoke;
+  }
+  .toggle-sidebar {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+    background-color: black;
+  }
+  .sidebar li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+    transition: background-color 0.5s;
+  }
+  .sidebar li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    list-style: none;
+    background-color: black;
+    /* tambahkan kode ini */
+    position: fixed;
+    left: -200px;
+    transition: 0.5s;
+}
+  /* tambahkan selector .sidebar-open di css */
+  .sidebar-open {
+    left: 0;
+}
+h3{
+   font-family: sans-serif;
+   font-size: 35px;
+   padding-left: 300px;
+   background: black;
+   width: 100%;
+   height: 100px;
+   color: white;
+}
+.nav{
+  background: black;
+}
+.card{
+  left:200px;
+}
+img{
+  width: 400px;
+  height: 150px;
+}
+   </style>
+</head>
+<body>
+  <nav class=" nav">
+
+  <h3>Greenlight | 3 second</h3>
+
+  </nav>
+  <button class="toggle-sidebar" id="toggle-sidebar">==</button>
+      <ul class="sidebar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">kontak</a></li>
+          <li><a href="#">galeri</a></li>
+      </ul>
+<br>
+      <div class="card" style="width: 18rem;">
+        
+        <img src="img/baju.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Beli</a>
+        </div>
+      </div>
+
+    <script>
+        const toggleSidebar = document.querySelector("#toggle-sidebar");
+        const sidebar = document.querySelector(".sidebar");
+        toggleSidebar.addEventListener("click", () => {
+        sidebar.classList.toggle("sidebar-open");
+        });
+   </script>
+</body>
+</html>

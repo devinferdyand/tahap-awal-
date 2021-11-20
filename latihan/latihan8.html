@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .jumbotron{
+            height: 100px;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron bg-dark">
+    <h2>Umur manusia</h2>
+</div>
+<center>
+<input type="text" placeholder="nama" id="nama" class="form-control col-sm-5"><br>
+<input type="text" placeholder="umur" id="umur" class="form-control col-sm-5"><br>
+<button onclick="submit()" class="btn btn-primary form-control col-sm-5"">submit</button>
+</center>
+    <script>
+            function submit(){
+        
+        var nama;
+        var umur = document.getElementById("umur").value;
+
+
+        if (umur <= 5){
+            document.write("anda masih balita");
+        }
+        else if(umur <= 12){
+            document.write("anda masi bocah");
+        }
+        else if (umur <= 18){
+            document.write("anda sudah remaja");
+        }
+        else if (umur <= 40){
+            document.write("anda sudah masuk kategori dewasa");    
+        }
+        else if (umur <= 60){
+            document.write("anda sudah tua istrirahat lain ulin wae");
+        }
+         else{
+             document.write("Anda sudah terlalu tua");
+         }
+            }   
+
+      
+
+
+ </script>
+
+</body>
+</html>

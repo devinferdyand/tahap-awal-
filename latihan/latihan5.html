@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        width: 500px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    div{
+        width: 700px;
+        height: 450px;
+        background:transparent;
+        border: 1px solid beige;
+       border-radius: 10px;
+       
+
+    }
+    body{
+        background-size: 100%;
+
+   
+    }
+    button{
+        width: 505px;
+        height: 35px;
+        background: RGB(00 80 80);
+        border: none;
+        color: whitesmoke;
+        font-family: sans-serif;
+        border-radius: 5px;
+       
+    }button:hover{
+        background: black;
+    }
+    h1{
+        font-family: sans-serif;
+        color: beige;
+
+    }
+</style>
+<center>
+<body background="img/progammer.jpg">
+    <br><br>
+    <div><br>
+    <h1> nilai rata rata</h1>
+    <p>
+        <input type="text" placeholder="nama" id="nama">
+
+    </p>
+<p>
+    <input type="text" placeholder="niss" id="niss">
+</p>
+<p>
+    <input type="text" placeholder="nilai pas" id="pas">
+</p>
+<p>
+    <input type="text" placeholder="nilai uts" id="uts">
+</p>
+<p>
+    <input type="text" placeholder="nilai tugas" id="tugas">
+</p>
+    <button onclick="submitdata()">submit</button>
+   
+</div>
+</center>
+   <script>
+  function submitdata(){
+    var nama = document.getElementById("nama").value;
+    var niss =document.getElementById("niss").value;
+    var pas = document.getElementById("pas").value;
+    var uts = document.getElementById("uts").value;
+    var tugas = document.getElementById("tugas").value;
+    var jumlah = Number(pas)+Number(uts)+Number(tugas);
+    jumlah = jumlah / 3;
+
+
+
+    document.write("nama :" + nama +"<br>");
+    document.write("niss : " + niss +"<br>");
+    document.write("nilai pass : " + pas +"<br>");
+    document.write("nilai uts : " + uts +"<br>");
+    document.write("nilai tugas : " + tugas +"<br>");
+    document.write("nilai rata rata : " + jumlah +"<br>" )
+
+  }
+    </script>
+</body>
+</html>

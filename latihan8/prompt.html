@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nama = prompt ("masukan nama");
+        var pilihcam= prompt ("pilih kamar");
+        var durasi = prompt("durasi");
+        var pilihmem = prompt ("status");
+        var uang = prompt("masukan uang anda")
+        var member;
+        var jumlah;
+        var diskon;
+        var nomember;
+        var bayar;
+        var suiterom = 300000;
+        var precident = 375000;
+        var hasil;
+        var kembalian;
+        
+          document.write("===**===== NOTA PEMBAYARAN HOTEL BANDUNG====**===" +"<BR>")
+           document.write("masukan nama : " + nama + "<br>");
+           document.write("pilih camar :" + pilihcam + "<br>");        
+           document.write("durasi : " + durasi + "<br>");
+           document.write("status kamar : " + pilihmem+ "<br>");
+        
+           if (pilihcam === "deluxe"){
+               jumlah = durasi * 275000;
+               hasil = uang - jumlah;
+               document.write("harga delux :" + jumlah +"<br>");
+               document.write("uang anda : " + uang + "<br>");
+              
+               document.write("kembalian : " + hasil + "<br>");
+
+
+           }
+           else if (pilihcam === "suiterom"){
+               jumlah = durasi * 300000;
+               hasil = uang - jumlah;
+               document.write("harga suite rom : " + jumlah);
+               document.write("uang anda : " + uang + "<br>");
+           
+               document.write("kembalian : " + hasil + "<br>");
+           }
+           else if (pilihcam === "precident"){
+               jumlah = durasi * 375000;
+               hasil = uang - jumlah;
+               document.write("harga precident : " + jumlah);
+              
+               document.write("uang anda : " + uang + "<br>")
+               document.write("kembalian : " + hasil + "<br>");
+               
+           }
+        
+           if (pilihmem === "member"){
+                if (durasi >= 4 && durasi <= 7 ){
+                 diskon = (20/100)*jumlah;
+                 hasil = jumlah - diskon;
+                 kembalian = uang - hasil;
+                 document.write("jika memilih member lebih dari 4 hari diskon 20% : " + hasil +"<br>");
+             
+                 document.write("kembalian nya :" + kembalian +"<br>");
+            }   else if(durasi >= 7) {
+                  diskon = (35/100)*jumlah;
+                  hasil = jumlah - diskon;
+                  kembalian = uang - hasil;
+                  document.write("jika  memilih member lebih dari 7 hari diskon35% : " + hasil +"<br>");
+               
+                  document.write("kembalian nya :" + kembalian +"<br>");
+                }
+         }
+
+         if (pilihmem === "nomember"){
+                if (durasi >= 4 && durasi <= 7 ){
+                 diskon = (10/100)*jumlah;
+                 hasil = jumlah - diskon;
+                 kembalian = uang - hasil;
+                 document.write("jika memilih member lebih dari 4 hari diskon 10% : " + hasil +"<br>");
+            
+                 document.write("kembalian nya :" + kembalian +"<br>");
+                }   else if(durasi >= 7) {
+                  diskon = (15/100)*jumlah;
+                  hasil = jumlah - diskon;
+                  kembalian = uang - hasil;
+                  document.write("jika  memilih member lebih dari 7 hari diskon15% : " + hasil +"<br>");
+           
+                  document.write("kembalian nya :" + kembalian +"<br>");
+                }
+         }
+          
+        
+    </script>
+</body>
+</html>

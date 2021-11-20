@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <center>
+    <div class="jumbotron">
+        <h2>Menu barang</h2><br>
+        <a href="sapu.html"><button class="btn btn-warning col-sm-1">sapu</button></a>
+        <a href=""><button class="btn btn-primary col-sm-1">lap pel</button></a>
+        <a href=""><button class="btn btn-danger col-sm-1">ember</button></a>
+        <a href=""><button class="btn btn-info col-sm-1">gayung</button></a>
+    </div>
+    
+</center>
+<center>
+ <p>Harga ember : Rp.30.000</p>
+<input type="text" placeholder="pesen brpa" id="pesan" class="form-control col-sm-5"><br>
+<button onclick="submit()" class="btn btn-success col-sm-5">submit</button>
+</center>
+    <script>
+        function submit(){
+            var harga =30000;
+            var jumlah;
+            var pesan = document.getElementById("pesan").value;
+
+            if(pesan){
+                document.write("harga barang 30.000" + "<br>");
+               jumlah = harga * pesan ;
+               document.write("jumlah nya : " + jumlah);
+            }
+            else {
+                document.write("gada");
+            }
+           
+        }
+    </script>
+
+</body>
+</html>
